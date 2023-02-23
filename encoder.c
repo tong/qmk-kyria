@@ -1,3 +1,5 @@
+/**/
+
 #include "encoder.h"
 
 void encoder_utils_init(void) {
@@ -103,8 +105,6 @@ void encoder_action(encoder_mode_t mode, uint8_t clockwise) {
             encoder_action_volume(clockwise);
     }
 }
-
-//---
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {

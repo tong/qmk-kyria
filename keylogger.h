@@ -1,4 +1,7 @@
-#pragma once
+/**/
+//#pragma once
+
+#include <stdio.h>
 
 int get_keylogs_idx(void);
 //char code_to_char(void);
