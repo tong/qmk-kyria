@@ -1,6 +1,7 @@
 /**/
 //#pragma once
 
+#include QMK_KEYBOARD_H
 #include <stdio.h>
 
 int get_keylogs_idx(void);

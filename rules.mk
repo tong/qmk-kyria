@@ -5,12 +5,14 @@ EXTRAKEY_ENABLE = yes
 LEADER_ENABLE = yes
 LTO_ENABLE = yes
 OLED_ENABLE = yes
-WPM_ENABLE = yes
+WPM_ENABLE = no
 #QUANTUM_PAINTER_ENABLE = yes
 #OLED_DRIVER_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+#MIDI_ENABLE = no
 
 RAW_ENABLE = no
+VIA_ENABLE = no
 
 AUDIO_ENABLE = no
 BOOTMAGIC_ENABLE = no
@@ -27,14 +29,13 @@ TAP_DANCE_ENABLE = no
 TERMINAL_ENABLE = no
 UNICODE_ENABLE = no
 VELOCIKEY_ENABLE = no
-VIA_ENABLE = no
 
 ifeq ($(strip $(ENCODER_ENABLE)), yes)
 	SRC += encoder.c
 endif
 ifeq ($(strip $(OLED_ENABLE)), yes)
 	SRC += oled.c
-	#SRC += keylogger.c
+	SRC += keylogger.c
 	#SRC += gfx/doge.c
 endif
 ifeq ($(strip $(RAW_ENABLE)), yes)
