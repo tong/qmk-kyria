@@ -104,16 +104,13 @@ if (record->event.pressed) {
                     register_code(KC_DEL);
                     delkey_registered = true;
                     set_mods(mod_state);
-                    // break;
-                    // return false;
-                    return true;
+                    break;
                 }
             } else {
                 if (delkey_registered) {
                     unregister_code(KC_DEL);
                     delkey_registered = false;
-                    // break;
-                    return true;
+                    break;
                 }
             }
         }
@@ -141,8 +138,7 @@ if (record->event.pressed) {
         */
         case ENC_MODE_R:
             if (record->event.pressed) encoder_cycle_mode(false, (mod_state & MOD_MASK_SHIFT));
-            // break;
-            return true;
+            break;
 #endif
     }
     return true;
