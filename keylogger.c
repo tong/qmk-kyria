@@ -9,7 +9,7 @@ int  keylogs_str_idx = 0;
 static const char char_name[60] = {' ', ' ', ' ', ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'R', 'E', 'B', 'T', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ';', '\'', ' ', ',', '.', '/', ' ', ' ', ' '};
 
 // char code_to_char(int code) {
-//     return char_name[code]; 
+//     return char_name[code];
 // }
 
 int get_keylogs_idx(void) {
@@ -42,4 +42,3 @@ const char *read_keylog(void) {
 const char *read_keylogs(void) {
     return keylogs_str;
 }
-

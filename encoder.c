@@ -112,8 +112,8 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     } else if (index == 1) {
         encoder_action(encoder_get_mode(false), clockwise);
     }
-#    ifdef OLED_ENABLE
+#ifdef OLED_ENABLE
     oled_on();
-#    endif
+#endif
     return true;
 }

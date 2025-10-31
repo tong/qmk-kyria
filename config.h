@@ -1,7 +1,7 @@
 /**/
 #pragma once
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180
 #define TAP_CODE_DELAY 10
 
 #define LEADER_PER_KEY_TIMING
@@ -9,9 +9,9 @@
 
 #define EE_HANDS
 
-//#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+// #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
-#define CAPS_WORD_IDLE_TIMEOUT 3000
+#define CAPS_WORD_IDLE_TIMEOUT 2000
 
 #ifdef ENCODER_ENABLE
 #    define ENCODER_DIRECTION_FLIP
@@ -19,10 +19,10 @@
 #endif
 
 #ifdef OLED_ENABLE
-#   define OLED_DISPLAY_128X64
-#   define OLED_BRIGHTNESS 255
-#   define OLED_TIMEOUT 30000
-#   define OLED_FONT_H "keyboards/splitkb/kyria/keymaps/tong/glcdfont.c"
+#    define OLED_DISPLAY_128X64
+#    define OLED_BRIGHTNESS 255
+#    define OLED_TIMEOUT 30000
+#    define OLED_FONT_H "keyboards/splitkb/kyria/keymaps/tong/glcdfont.c"
 #endif
 
 #ifdef RGBLIGHT_ENABLE
